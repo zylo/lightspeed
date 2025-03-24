@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="87.87" height="104" viewBox="0 0 87.87 104">
+  <defs>
+    <clipPath id="clip-z-logo">
+      <rect width="87.87" height="104"/>
+    </clipPath>
+  </defs>
+  <g id="z-logo" clip-path="url(#clip-z-logo)">
+    <g id="zylo-logo" transform="translate(0 0)">
+      <path id="Path_71" data-name="Path 71" d="M14.62,0H73.242c8.092,0,14.622,6.845,14.622,15.324S81.334,30.65,73.242,30.65H14.62C6.53,30.65,0,23.805,0,15.324,0,6.994,6.53,0,14.62,0Zm0,73.56H73.242c8.092,0,14.622,6.845,14.622,15.326s-6.53,15.324-14.622,15.324H14.62C6.53,104.21,0,97.369,0,88.886S6.53,73.56,14.62,73.56Z" transform="translate(0.001 0)" fill="#f48237"/>
+      <path id="Path_72" data-name="Path 72" d="M82.341,3.19a14.43,14.43,0,0,1,2.266,20.476l-58.533,73a14.549,14.549,0,0,1-20.548,2.26A14.425,14.425,0,0,1,3.258,78.445L61.789,5.594A14.571,14.571,0,0,1,82.341,3.19Z" transform="translate(0 0)" fill="#eb5b00"/>
+    </g>
+  </g>
+</svg>

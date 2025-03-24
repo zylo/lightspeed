@@ -1,0 +1,77 @@
+.intro {
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url('stars.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+
+  &__container {
+    color: #f3f315;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 400%;
+    font-weight: 900;
+    height: 100vh;
+    justify-content: center;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 400px;
+    position: relative;
+    text-align: justify;
+    top: 50%;
+  }
+
+  &__title-container {
+    margin-bottom: 15rem;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 250%;
+    text-transform: uppercase;
+  }
+
+  &__crawl {
+    animation: crawl 60s linear;
+    position: relative;
+    transform-origin: 100% 100%;
+    top: 100vh;
+  }
+
+  &__button {
+    animation: introButtonFade 0.5s ease-in forwards;
+    animation-delay: 60s;
+    opacity: 0;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg) translateZ(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: -500vh;
+    transform: rotateX(25deg) translateZ(-2500px);
+    opacity: 0;
+  }
+}
+
+@keyframes introButtonFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

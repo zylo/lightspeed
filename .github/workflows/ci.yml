@@ -1,0 +1,72 @@
+name: 'CI'
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review, converted_to_draft]
+
+concurrency:
+  group: ci_${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  setupCache:
+    name: Setup Cache
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    steps:
+      - uses: actions/checkout@v4
+      - name: Shared Setup
+        id: shared-setup
+        uses: './.github/actions/shared-setup'
+      - name: Install Dependencies
+        if: steps.shared-setup.outputs.cache-hit != 'true'
+        run: npm ci
+
+  eslint:
+    name: ESLint
+    needs: setupCache
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    steps:
+      - uses: actions/checkout@v4
+      - name: Shared Setup
+        uses: './.github/actions/shared-setup'
+      - name: Run Linter
+        run: npm run lint
+
+  typescript:
+    name: TypeScript
+    needs: setupCache
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    steps:
+      - uses: actions/checkout@v4
+      - name: Shared Setup
+        uses: './.github/actions/shared-setup'
+      - name: Run Type Checking
+        run: |
+          export NODE_OPTIONS="--max_old_space_size=4096"
+          npm run type-check
+
+  build:
+    name: Build
+    needs: setupCache
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    steps:
+      - uses: actions/checkout@v4
+      - name: Shared Setup
+        uses: './.github/actions/shared-setup'
+      - name: Build Action
+        run: npm run build
+
+  vitest:
+    name: Vitest
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    steps:
+      - uses: actions/checkout@v4
+      - name: Shared Setup
+        uses: './.github/actions/shared-setup'
+      - name: run tests
+        run: npm run test:ci
