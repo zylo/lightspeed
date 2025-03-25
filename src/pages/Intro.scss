@@ -35,20 +35,36 @@
   }
 
   &__crawl {
-    animation: crawl 60s linear;
+    animation: crawl 45s linear;
     position: relative;
     transform-origin: 100% 100%;
     top: 100vh;
   }
 
-  &__button {
+  &__button-container {
+    align-items: center;
     animation: introButtonFade 0.5s ease-in forwards;
-    animation-delay: 60s;
+    animation-delay: 44s;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: center;
     opacity: 0;
+    padding: 5rem;
     position: absolute !important;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    img {
+      max-height: 2rem;
+    }
+
+    h5 {
+      margin-bottom: 1.25rem;
+    }
   }
 }
 

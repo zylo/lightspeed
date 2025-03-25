@@ -7,9 +7,9 @@ export function PlanetsBriefing() {
       <Grid2 size={12}>
         <Typography variant="body1">
           Through user research we have concluded that a table with all the planets in the Star Wars
-          universe is a must-have feature for any bounty hunter. This feature will allow our
-          prospects to quickly access information about the planets where their targets might be
-          hiding.
+          universe is a must-have feature for any pilot. This feature will allow our prospects to
+          quickly access information about the planets where and learn key information on how to
+          navigate them.
         </Typography>
       </Grid2>
       <Grid2 size={12}>

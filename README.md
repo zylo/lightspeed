@@ -55,7 +55,8 @@ Lastly, committing often helps us see your process.
 
 ### Objectives
 
-- [ ] Ensure all items on the "Brief" page within the app are completed.
+- [ ] Ensure all primary objectives on the "Planets" page within the app are completed.
+- [ ] Ensure all primary objectives on the "Application" page within the app are completed.
 - [ ] Ensure CI passes.
 
 <br>

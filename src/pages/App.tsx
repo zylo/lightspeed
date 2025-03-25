@@ -1,9 +1,13 @@
 import { AppBar, Box, Button, Link, Container, Toolbar } from '@mui/material';
 import './App.scss';
-import { Link as RRLink, Outlet } from 'react-router';
+import { Link as RRLink, Outlet, Navigate } from 'react-router';
 import { IconRocket } from '@tabler/icons-react';
 
 export function App() {
+  if (localStorage.getItem('journeyStarted') !== 'true') {
+    return <Navigate to="/" replace />;
+  }
+
   return (
     <>
       <AppBar className="app-bar" position="static">

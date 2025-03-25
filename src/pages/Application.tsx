@@ -14,8 +14,8 @@ const starships = [
     value: 'Razor Crest',
   },
   {
-    label: 'Slave 1',
-    value: 'Slave 1',
+    label: 'X Wing',
+    value: 'X Wing',
   },
 ];
 

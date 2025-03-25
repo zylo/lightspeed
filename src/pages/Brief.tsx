@@ -1,4 +1,4 @@
-import { Box, Button, Card, Divider, Grid2, Typography } from '@mui/material';
+import { Box, Button, Card, Grid2, Typography } from '@mui/material';
 import { Link } from 'react-router';
 import { IconArrowRight } from '@tabler/icons-react';
 import { Page } from '../components/Page';
@@ -11,8 +11,8 @@ export function Brief() {
           <Grid2 size={12}>
             <Typography variant="body1">
               Welcome to Lightspeed, your gateway to the galaxy! We&apos;re excited to have you on
-              board as a new pilot. Before you can take off, we need to make sure you&apos;re
-              prepared for the journey ahead.
+              board as a new &quot;pilot&quot;. Before you can take off, we need to make sure
+              you&apos;re prepared for the journey ahead.
             </Typography>
           </Grid2>
           <Grid2 size={12}>
@@ -36,6 +36,7 @@ export function Brief() {
               to the bonus tasks if you have time.
             </Typography>
           </Grid2>
+          <br />
           <Grid2 size={12}>
             <Box sx={{ display: 'flex', gap: 'calc(1.25rem / 2)' }}>
               <Button
@@ -55,7 +56,7 @@ export function Brief() {
                 Application Task
               </Button>
             </Box>
-            <Divider sx={{ margin: '2.5rem 0' }} />
+            <br />
           </Grid2>
           <Card>
             <img

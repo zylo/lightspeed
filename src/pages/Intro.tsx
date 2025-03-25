@@ -1,4 +1,4 @@
-import { Button } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import { IconRocket } from '@tabler/icons-react';
 import { Navigate, useNavigate } from 'react-router';
 import './Intro.scss';
@@ -25,13 +25,13 @@ export function Intro() {
           </div>
 
           <p>
-            Bounty hunters from every corner of the galaxy gather, eager to prove their worth. Among
-            them, a new Mandalorian has emerged, shrouded in mystery and clad in armor.
+            Prospective pilots from every corner of the galaxy gather, eager to prove their worth.
+            Among them, a new challenger has emerged, shrouded in mystery and clad in armor.
           </p>
 
           <p>
-            The Zylo Coding Guild, a revered council of tech wizards and bounty elites, has issued
-            an epic challenge to any who dare claim the title of &quot;Senior Hunter.&quot;
+            The Zylo Coding Guild, a revered council of tech wizards and pilot extraordinaires, has
+            issued an epic challenge to any who dare claim the title of &quot;Senior Pilot.&quot;
           </p>
 
           <p>
@@ -47,15 +47,18 @@ export function Intro() {
           <p>The galactic clock ticks. May the Source be with them.</p>
         </div>
       </section>
-      <Button
-        className="intro__button"
-        color="secondary"
-        endIcon={<IconRocket />}
-        onClick={handleStartJourney}
-        variant="contained"
-      >
-        Start your journey
-      </Button>
+      <div className="intro__button-container">
+        <img alt="Zylo Logo" src="/zylo_logo.svg" />
+        <Typography variant="h5">Coding Challenge</Typography>
+        <Button
+          endIcon={<IconRocket />}
+          onClick={handleStartJourney}
+          size="large"
+          variant="contained"
+        >
+          Start your journey
+        </Button>
+      </div>
     </div>
   );
 }

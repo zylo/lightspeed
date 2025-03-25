@@ -18,10 +18,11 @@ createRoot(document.getElementById('root')!).render(
           element={
             <ThemeProvider
               theme={createTheme({
-                colorSchemes: { dark: true },
+                colorSchemes: { dark: true, light: false },
                 shape: {
                   borderRadius: 12,
                 },
+                defaultColorScheme: 'dark',
               })}
             >
               <CssBaseline>
