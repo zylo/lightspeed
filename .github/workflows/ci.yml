@@ -70,4 +70,4 @@ jobs:
       - name: Shared Setup
         uses: './.github/actions/shared-setup'
       - name: run tests
-        run: npm run test:ci
+        run: npm run test
