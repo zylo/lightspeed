@@ -88,5 +88,3 @@ When you're ready to submit your work, follow these instructions:
 ![good luck](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmN5N3F3MW05cjZhYWY4M3pxdWx0dW01b3YwM21sOGd6eWp5bWZmeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ornk7TgUdhjhTYgta/giphy.gif)
 
 ###### Good luck! ❤️
-
-testing CI
