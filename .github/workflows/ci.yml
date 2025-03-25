@@ -62,6 +62,7 @@ jobs:
 
   vitest:
     name: Vitest
+    needs: setupCache
     runs-on: ubuntu-latest
     if: github.event.pull_request.draft == false
     steps:
