@@ -1,4 +1,4 @@
-<!-- Treat this first section as if this project was a "real world" scenario -->
+###### _Treat this first section as if this project was a "real world" scenario_
 
 ## Briefing
 
@@ -17,7 +17,9 @@
 
 ---
 
-<!-- This area is for you to tell us a bit about your work. -->
+<br>
+
+###### _This area is for you to tell us a bit about your work._
 
 <br>
 
