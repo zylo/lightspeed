@@ -62,6 +62,7 @@ jobs:
 
   vitest:
     name: Vitest
+    needs: setupCache
     runs-on: ubuntu-latest
     if: github.event.pull_request.draft == false
     steps:
@@ -69,4 +70,4 @@ jobs:
       - name: Shared Setup
         uses: './.github/actions/shared-setup'
       - name: run tests
-        run: npm run test:ci
+        run: npm run test
