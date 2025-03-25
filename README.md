@@ -57,7 +57,25 @@ Lastly, committing often helps us see your process.
 
 - [ ] Ensure all primary objectives on the "Planets" page within the app are completed.
 - [ ] Ensure all primary objectives on the "Application" page within the app are completed.
-- [ ] Ensure CI passes.
+- [ ] Ensure these commands pass successfully: (if they don't, you should probably should fix them 😉)
+  - [ ] `npm run lint`
+  - [ ] `npm run test -- watch=false`
+  - [ ] `npm run type-check`
+  - [ ] `npm run build`
+
+<br>
+
+## Getting Started & Setup
+
+1. Create a private repository on your Github account called `lightspeed`.
+2. Clone the `zylo/lightspeed` repo `git clone git@github.com:zylo/lightspeed.git`.
+3. Navigate into the project `cd lightspeed`.
+4. Change the upstream to your new private repo: `git remote set-url origin git@github.com:your_github_name/lightspeed.git`, replacing `your_github_name` with your own.
+5. Run `git push -u origin head` on `main`.
+6. Ensure that `main` now exists as the default branch in your private `lightspeed` repo.
+7. Create your own code challenge branch `git checkout -b [whatever_you_want_to_name_your_branch]`.
+8. In your local clone, run `nvm use && npm i`. Install the correct Node version if needed before proceeding.
+9. Run `npm run dev` to start the app.
 
 <br>
 
@@ -65,19 +83,11 @@ Lastly, committing often helps us see your process.
 
 When you're ready to submit your work, follow these instructions:
 
-1. Follow GitHub's guidelines for pushing your branch to remote.
-2. Open a pull request against the main `zylo/lightspeed` repo, following the PR template guide.
-3. Ensure CI passes (if it doesn't, you should probably should fix it 😉)
-4. Tag @grahamhency for review and reply to the original email we sent you regarding this challenge letting us know you're ready for us to look at it.
-
-<br>
-
-## Getting Started & Setup
-
-1. Create a fork of this repo and clone it locally.
-2. In your local clone, run `nvm use && npm i`. Install the correct Node version if needed before proceeding.
-3. Run `npm run dev` to start the app.
-4. Run `npm run test` to run tests.
+1. Invite Github users @grahamhency, @jawhitney, and @rachelswilliams as collaborators in the settings of your private repo.
+2. Push the commits to your code challenge branch of your private repo.
+3. Open a pull request in your private repo comparing your code challenge branch against `main`, following the PR template guide.
+4. Tag @grahamhency for review and reply to the original email we sent you regarding this challenge letting us know you're ready for us to look at it with the link to the PR.
+5. Congrats, you're done!
 
 <br>
 
