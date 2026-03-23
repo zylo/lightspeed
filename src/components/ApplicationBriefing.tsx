@@ -44,6 +44,61 @@ export function ApplicationBriefing() {
         </ul>
       </Grid2>
       <Grid2 size={12}>
+        <Typography variant="body1">
+          Next, we need the &quot;Planet&quot; dropdown to be populated from the same SWAPI data used
+          on the Planets page:
+        </Typography>
+        <ul>
+          <li>
+            Planet data should <strong>not</strong> be re-fetched when navigating between pages. If
+            the data was already loaded on the Planets page, reuse it here.
+          </li>
+          <li>
+            When a planet is selected, display its climate and terrain inline below the dropdown.
+          </li>
+          <li>
+            If the user has applied filters on the Planets page (name, climate, terrain), this
+            page&apos;s planet dropdown should offer an option to &quot;Show only filtered
+            planets&quot; that respects those filters.
+          </li>
+          <li>
+            All three filter types (name, climate, terrain) should persist across navigation between
+            pages.
+          </li>
+          <li>
+            If the user navigates directly to this page with no prior filter state, the dropdown
+            should show all planets with no filter option visible.
+          </li>
+        </ul>
+      </Grid2>
+      <Grid2 size={12}>
+        <Typography variant="body1">
+          Finally, the form submission needs a more robust UX. Use the provided{' '}
+          <code>submitApplication()</code> mock function in{' '}
+          <code>src/utilities/submitApplication.ts</code> to simulate a server response:
+        </Typography>
+        <ul>
+          <li>
+            On submit, immediately show a &quot;submitted&quot; confirmation view displaying the form
+            data (optimistic update).
+          </li>
+          <li>
+            While the request is pending, the user should see a clear pending/processing indicator.
+          </li>
+          <li>On success: confirm the submission with a success state.</li>
+          <li>
+            On conflict: the mock may return a conflict response indicating a field is no longer
+            available, along with alternatives. Transition to an{' '}
+            <strong>inline correction flow</strong> where the user can pick an alternative without
+            losing the rest of their form data. After correction, re-submit.
+          </li>
+          <li>
+            If the user navigates away during the pending window and returns, the pending/result
+            state should still be visible (not reset to a blank form).
+          </li>
+        </ul>
+      </Grid2>
+      <Grid2 size={12}>
         <Typography variant="h6">Bonus Objectives</Typography>
         <Typography variant="body1">
           If you&apos;ve completed the primary objectives and have time to spare, consider
@@ -51,8 +106,8 @@ export function ApplicationBriefing() {
         </Typography>
         <ul>
           <li>
-            Add more resources from the SWAPI to the form, such as &quot;Planets&quot; or
-            &quot;Vehicles&quot;. Ensure that anything you add is properly validated.
+            Add more resources from the SWAPI to the form, such as &quot;Vehicles&quot;. Ensure that
+            anything you add is properly validated.
           </li>
           <li>Anything else you think might enhance the user experience beyond this.</li>
         </ul>
