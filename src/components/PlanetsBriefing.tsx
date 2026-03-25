@@ -45,6 +45,21 @@ export function PlanetsBriefing() {
         </ul>
       </Grid2>
       <Grid2 size={12}>
+        <Typography variant="body1">
+          Additionally, the planet data and any filters applied here need to be accessible from the
+          Application page:
+        </Typography>
+        <ul>
+          <li>
+            Planet data should be shared with the Application page without re-fetching from the API.
+          </li>
+          <li>
+            If the user filters planets here (by name, climate, or terrain), those filters should
+            persist when navigating to the Application page and back.
+          </li>
+        </ul>
+      </Grid2>
+      <Grid2 size={12}>
         <Typography variant="h6">Bonus Objectives</Typography>
         <Typography variant="body1">
           If you&apos;ve completed the primary objectives and have time to spare, consider

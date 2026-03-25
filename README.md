@@ -51,6 +51,16 @@ You will see some "Bonus Objectives", but please focus on those only after compl
 
 Lastly, committing often helps us see your process.
 
+We're excited to chat through your thought process and architectural decision making, so be ready to share some of the challenges you encountered.
+
+<br>
+
+### AI Tooling
+
+As we've seen over the last year, the industry is changing rapidly and the advent of tools like Cursor and Claude Code have changed the way we do our jobs. You are encouraged to use these tools as you would in your day-to-day work.
+
+If you decide to use one of these tools, we'd love if you'd include a summary of your conversation with the tool as a markdown file.
+
 <br>
 
 ### Objectives
@@ -83,7 +93,7 @@ Lastly, committing often helps us see your process.
 
 When you're ready to submit your work, follow these instructions:
 
-1. Invite Github users @grahamhency, @jawhitney, and @rachelswilliams as collaborators in the settings of your private repo.
+1. Invite Github users @grahamhency, @jawhitney, and @nteetszylo as collaborators in the settings of your private repo.
 2. Push the commits to your code challenge branch of your private repo.
 3. Open a pull request in your private repo comparing your code challenge branch against `main`, following the PR template guide.
 4. Tag @grahamhency for review and reply to the original email we sent you regarding this challenge with the link to the PR, letting us know you're ready for us to look at it.
