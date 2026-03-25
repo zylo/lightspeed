@@ -53,6 +53,12 @@ Lastly, committing often helps us see your process.
 
 <br>
 
+### AI Tooling
+
+As we've seen over the last year, the industry is changing rapidly and the advent of tools like Cursor and Claude Code have changed the way we do our jobs. Feel free to use these tools as you would in your day-to-day work. We're excited to chat through your thought process and architectural decision making, so be ready to share some of the challenges you encountered, but feel free to use AI tooling as you see fit in working through this challenge.
+
+<br>
+
 ### Objectives
 
 - [ ] Ensure all primary objectives on the "Planets" page within the app are completed.
